@@ -151,10 +151,49 @@
         </div>
         <div class="field"><label>Email</label><input type="email" name="Email"></div>
         <div class="form-row">
-          <div class="field"><label>Highest Qualification</label><input type="text" name="Qualification" placeholder="e.g. B.E. Mechanical"></div>
-          <div class="field"><label>Experience</label><input type="text" name="Experience" placeholder="e.g. Fresher / 2 years"></div>
+          <div class="field">
+            <label>Highest Qualification</label>
+            <select name="Qualification" required>
+              <option value="">Select qualification</option>
+              <option>10th / SSC</option>
+              <option>12th / HSC</option>
+              <option>ITI</option>
+              <option>Diploma</option>
+              <option>Graduate (B.A / B.Com / B.Sc)</option>
+              <option>B.E. / B.Tech</option>
+              <option>MBA</option>
+              <option>M.E. / M.Tech</option>
+              <option>Other Postgraduate</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Experience</label>
+            <select name="Experience" required>
+              <option value="">Select experience</option>
+              <option>Fresher</option>
+              <option>Less than 1 year</option>
+              <option>1 – 2 years</option>
+              <option>2 – 5 years</option>
+              <option>5 – 10 years</option>
+              <option>10+ years</option>
+            </select>
+          </div>
         </div>
-        <div class="field"><label>Role / Industry Interested In</label><input type="text" name="Interest" placeholder="e.g. Software Development, Banking"></div>
+        <div class="field">
+          <label>Role / Industry Interested In</label>
+          <select name="Interest" required>
+            <option value="">Select role / industry</option>
+            <option>Software Development / IT</option>
+            <option>Banking &amp; NBFC</option>
+            <option>Corporate &amp; Technical Support</option>
+            <option>Industrial &amp; Manufacturing</option>
+            <option>Institutional &amp; Government</option>
+            <option>Retail &amp; Sales</option>
+            <option>Work From Home Roles</option>
+            <option>Other</option>
+          </select>
+        </div>
         <button type="submit" class="btn btn--primary btn--block">Send via WhatsApp</button>
       </form>
     </div>

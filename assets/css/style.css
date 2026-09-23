@@ -180,6 +180,64 @@ img{max-width:100%;display:block;}
 .step h4{font-size:16px;margin:10px 0 6px;}
 .step p{font-size:13.5px;color:var(--gray);margin:0;}
 
+/* Trust metrics bar */
+.trust-bar{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:0;
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.trust-bar .trust-item{
+  flex:1;min-width:180px;text-align:center;padding:30px 20px;
+  border-right:1px solid var(--border);
+}
+.trust-bar .trust-item:last-child{border-right:none;}
+.trust-bar .trust-num{font-family:'Rubik';font-weight:800;font-size:32px;color:var(--orange);}
+.trust-bar .trust-label{font-size:13.5px;color:var(--gray);text-transform:uppercase;letter-spacing:.6px;margin-top:4px;}
+@media (max-width:700px){
+  .trust-bar{flex-direction:column;}
+  .trust-bar .trust-item{border-right:none;border-bottom:1px solid var(--border);}
+  .trust-bar .trust-item:last-child{border-bottom:none;}
+}
+
+/* Testimonials */
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+@media (max-width:900px){.testimonial-grid{grid-template-columns:1fr;}}
+.testimonial-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  padding:30px;box-shadow:var(--shadow);display:flex;flex-direction:column;
+}
+.testimonial-stars{color:var(--orange);font-size:15px;margin-bottom:14px;letter-spacing:2px;}
+.testimonial-quote{color:var(--gray);font-size:15px;flex:1;margin:0 0 20px;font-style:italic;}
+.testimonial-foot{display:flex;align-items:center;gap:12px;}
+.testimonial-avatar{
+  width:44px;height:44px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(46,125,116,0.12);color:var(--teal);
+  font-family:'Rubik';font-weight:700;font-size:16px;
+}
+.testimonial-name{font-weight:700;font-size:14.5px;}
+.testimonial-meta{font-size:13px;color:var(--gray-light);}
+
+/* Recent openings preview */
+.openings-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media (max-width:900px){.openings-grid{grid-template-columns:1fr;}}
+.opening-card{
+  background:var(--white);border:1px solid var(--border);border-radius:14px;
+  padding:24px;box-shadow:var(--shadow);position:relative;
+}
+.opening-badge{
+  position:absolute;top:20px;right:20px;background:rgba(221,107,32,0.12);
+  color:var(--orange);font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.5px;padding:4px 10px;border-radius:100px;
+}
+.opening-role{font-weight:700;font-size:16.5px;margin:0 0 6px;padding-right:70px;}
+.opening-loc{font-size:13.5px;color:var(--gray-light);margin-bottom:14px;}
+.opening-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.opening-tag{
+  font-size:12px;font-weight:600;color:var(--teal);background:rgba(46,125,116,0.1);
+  padding:5px 11px;border-radius:100px;
+}
+
 /* Logo strip */
 .logo-strip{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center;}
 .logo-pill{
